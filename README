@@ -1,0 +1,9 @@
+A directory containing files I use to configure my dev environment
+
+1. Vim
+  To use the vimrc file, create a vimrc in your home directory with the following
+    fun! MySys()
+        return "linux"
+    endfun
+    set runtimepath=<path_to_this_readme_dir>,$VIMRUNTIME
+    source <path_to_this_readme_dir>/vim/vimrc
