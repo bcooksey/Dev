@@ -88,10 +88,10 @@ let g:mapleader = ","
 "nmap <leader>w :w!<cr>
 
 " Fast editing of the .vimrc
-"map <leader>e :e! ~/.vim_runtime/vimrc<cr>
+map <leader>e :e! ~/my_dev/vim/vimrc<cr>
 
 " When vimrc is edited, reload it
-"autocmd! bufwritepost vimrc source ~/.vim_runtime/vimrc
+autocmd! bufwritepost vimrc source ~/my_dev/vim/vimrc
 
 " In many terminal emulators the mouse works just fine, thus enable it.
 if has('mouse')
@@ -102,8 +102,8 @@ endif
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Set 7 lines to the curors - when moving vertical..
-set so=7
+" Set 10 lines to the curors - when moving vertical..
+set so=20
 
 set wildmenu " Turn on WiLd menu
 
@@ -158,8 +158,8 @@ endif
 set background=dark
 
 if has("gui_running")
-  " set guioptions-=m
-  " set guioptions-=T
+  set guioptions-=m
+  set guioptions-=T
   set t_Co=256
   colorscheme peaksea
 else
@@ -324,15 +324,29 @@ endif
 " => Moving around, tabs and buffers
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Map space to / (search) and c-space to ? (backgwards search)
-map <space> /
-map <c-space> ?
-map <silent> <leader><cr> :noh<cr>
+"map <space> /
+"map <c-space> ?
+map <silent> <space> :noh<cr>
 
 " Smart way to move btw. windows
 map <C-j> <C-W>j
 map <C-k> <C-W>k
 map <C-h> <C-W>h
 map <C-l> <C-W>l
+
+" Navigate by display lines, not physical lines
+" See http://vim.wikia.com/wiki/VimTip38
+"set virtualedit=
+"setlocal linebreak nolist
+"setlocal display+=lastline
+"noremap  <buffer> <silent> <Up>   gk
+"noremap  <buffer> <silent> <Down> gj
+"noremap  <buffer> <silent> <Home> g<Home>
+"noremap  <buffer> <silent> <End>  g<End>
+"inoremap <buffer> <silent> <Up>   <C-o>gk
+"inoremap <buffer> <silent> <Down> <C-o>gj
+"inoremap <buffer> <silent> <Home> <C-o>g<Home>
+"inoremap <buffer> <silent> <End>  <C-o>g<End>
 
 " Close the current buffer
 map <leader>bd :Bclose<cr>
@@ -341,8 +355,8 @@ map <leader>bd :Bclose<cr>
 map <leader>ba :1,300 bd!<cr>
 
 " Use the arrows to something usefull
-map <right> :bn<cr>
-map <left> :bp<cr>
+"map <right> :bn<cr>
+"map <left> :bp<cr>
 
 " Tab configuration
 map <leader>tn :tabnew<cr>
@@ -423,17 +437,17 @@ vnoremap $1 <esc>`>a)<esc>`<i(<esc>
 vnoremap $2 <esc>`>a]<esc>`<i[<esc>
 vnoremap $3 <esc>`>a}<esc>`<i{<esc>
 vnoremap $$ <esc>`>a"<esc>`<i"<esc>
-vnoremap $q <esc>`>a'<esc>`<i'<esc>
-vnoremap $e <esc>`>a"<esc>`<i"<esc>
+"vnoremap $q <esc>`>a'<esc>`<i'<esc>
+"vnoremap $e <esc>`>a"<esc>`<i"<esc>
 
 " Map auto complete of (, ", ', [
 inoremap $1 ()<esc>i
 inoremap $2 []<esc>i
 inoremap $3 {}<esc>i
 inoremap $4 {<esc>o}<esc>O
-inoremap $q ''<esc>i
-inoremap $e ""<esc>i
-inoremap $t <><esc>i
+"inoremap $q ''<esc>i
+"inoremap $e ""<esc>i
+"inoremap $t <><esc>i
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -528,7 +542,7 @@ map <leader>s? z=
 
 """"""""""""""""""""""""""""""
 " => JavaScript section
-"""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""
 au FileType javascript call JavaScriptFold()
 au FileType javascript setl fen
 au FileType javascript setl nocindent
@@ -549,6 +563,13 @@ function! JavaScriptFold()
     endfunction
     setl foldtext=FoldText()
 endfunction
+
+
+""""""""""""""""""""""""""""""
+" => Puppet section
+""""""""""""""""""""""""""""""
+" detect puppet filetype
+au BufRead,BufNewFile *.pp set filetype=puppet
 
 
 """"""""""""""""""""""""""""""
