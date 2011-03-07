@@ -102,8 +102,8 @@ endif
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Set 10 lines to the curors - when moving vertical..
-set so=20
+" Set 12 lines to the curors - when moving vertical..
+set so=12
 
 set wildmenu " Turn on WiLd menu
 
@@ -151,7 +151,7 @@ elseif MySys() == "windows"
   " set gfn=Bitstream\ Vera\ Sans\ Mono:h10
   set gfn=Courier\ 12
 elseif MySys() == "linux"
-  set gfn=Monospace\ 10
+  set gfn=Monospace\ 11
   set shell=/bin/bash
 endif
 
@@ -161,7 +161,7 @@ if has("gui_running")
   set guioptions-=m
   set guioptions-=T
   set t_Co=256
-  colorscheme peaksea
+  colorscheme desert 
 else
   colorscheme zellner
 endif
@@ -347,6 +347,10 @@ map <C-l> <C-W>l
 "inoremap <buffer> <silent> <Down> <C-o>gj
 "inoremap <buffer> <silent> <Home> <C-o>g<Home>
 "inoremap <buffer> <silent> <End>  <C-o>g<End>
+"noremap  <buffer> <silent> k gk
+"noremap  <buffer> <silent> j gj
+"noremap  <buffer> <silent> 0 g0
+"noremap  <buffer> <silent> $ g$
 
 " Close the current buffer
 map <leader>bd :Bclose<cr>
@@ -413,11 +417,12 @@ autocmd BufReadPost *
 set laststatus=2
 
 " Format the statusline
-set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{CurDir()}%h\ \ \ Line:\ %l/%L:%c
+"set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{CurDir()}%h\ \ \ Line:\ %l/%L:%c
+set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ Line:\ %l/%L:%c
 
 
 function! CurDir()
-    let curdir = substitute(getcwd(), '/Users/amir/', "~/", "g")
+    let curdir = substitute(getcwd(), '/home/bcooksey/', "~/", "g")
     return curdir
 endfunction
 
@@ -570,6 +575,12 @@ endfunction
 """"""""""""""""""""""""""""""
 " detect puppet filetype
 au BufRead,BufNewFile *.pp set filetype=puppet
+
+
+""""""""""""""""""""""""""""""
+" => TT section
+""""""""""""""""""""""""""""""
+au BufNewFile,BufRead *.tt setf tt2
 
 
 """"""""""""""""""""""""""""""
