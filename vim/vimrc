@@ -329,10 +329,10 @@ endif
 map <silent> <space> :noh<cr>
 
 " Smart way to move btw. windows
-map <C-j> <C-W>j
-map <C-k> <C-W>k
-map <C-h> <C-W>h
-map <C-l> <C-W>l
+"map <C-j> <C-W>j
+"map <C-k> <C-W>k
+"map <C-h> <C-W>h
+"map <C-l> <C-W>l
 
 " Navigate by display lines, not physical lines
 " See http://vim.wikia.com/wiki/VimTip38
@@ -552,8 +552,8 @@ au FileType javascript call JavaScriptFold()
 au FileType javascript setl fen
 au FileType javascript setl nocindent
 
-au FileType javascript imap <c-t> AJS.log();<esc>hi
-au FileType javascript imap <c-a> alert();<esc>hi
+au FileType javascript imap <c-t> console.dir();<esc>hi
+au FileType javascript imap <c-a> console.debug();<esc>hi
 
 au FileType javascript inoremap <buffer> $r return 
 au FileType javascript inoremap <buffer> $f //--- PH ----------------------------------------------<esc>FP2xi
@@ -613,7 +613,7 @@ set grepprg=/bin/grep\ -nH
 " Remove the Windows ^M - when the encodings gets messed up
 noremap <Leader>m mmHmt:%s/<C-V><cr>//ge<cr>'tzt'm
 
-"Quickly open a buffer for scribble
+"Quickly open a buffer for scratch
 map <leader>q :e ~/buffer<cr>
 au BufRead,BufNewFile ~/buffer iab <buffer> xh1 ===========================================
 
