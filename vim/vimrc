@@ -329,10 +329,10 @@ endif
 map <silent> <space> :noh<cr>
 
 " Smart way to move btw. windows
-"map <C-j> <C-W>j
-"map <C-k> <C-W>k
-"map <C-h> <C-W>h
-"map <C-l> <C-W>l
+map <C-j> <C-W>j
+map <C-k> <C-W>k
+map <C-h> <C-W>h
+map <C-l> <C-W>l
 
 " Navigate by display lines, not physical lines
 " See http://vim.wikia.com/wiki/VimTip38
@@ -521,7 +521,7 @@ let g:miniBufExplSplitBelow=1
 
 let g:bufExplorerSortBy = "name"
 
-autocmd BufRead,BufNew :call UMiniBufExplorer
+"autocmd BufRead,BufNew :call UMiniBufExplorer
 
 map <leader>u :TMiniBufExplorer<cr>
 
@@ -544,6 +544,12 @@ map <leader>sp [s
 map <leader>sa zg
 map <leader>s? z=
 
+""""""""""""""""""""""""""""""
+" => Perl section
+""""""""""""""""""""""""""""""
+au BufRead,BufNewFile *.pm setfiletype perl
+au BufRead,BufNewFile *.pl setfiletype perl
+au FileType perl imap <c-l> print STDERR "\n>>>>>>>>>" .  . "\n";<esc>BBhi
 
 """"""""""""""""""""""""""""""
 " => JavaScript section
@@ -568,7 +574,6 @@ function! JavaScriptFold()
     endfunction
     setl foldtext=FoldText()
 endfunction
-
 
 """"""""""""""""""""""""""""""
 " => Puppet section
