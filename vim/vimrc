@@ -161,7 +161,7 @@ if has("gui_running")
   set guioptions-=m
   set guioptions-=T
   set t_Co=256
-  colorscheme desert 
+  colorscheme molokai 
 else
   colorscheme zellner
 endif
@@ -446,10 +446,10 @@ vnoremap $$ <esc>`>a"<esc>`<i"<esc>
 "vnoremap $e <esc>`>a"<esc>`<i"<esc>
 
 " Map auto complete of (, ", ', [
-inoremap $1 ()<esc>i
-inoremap $2 []<esc>i
-inoremap $3 {}<esc>i
-inoremap $4 {<esc>o}<esc>O
+"inoremap $1 ()<esc>i
+"inoremap $2 []<esc>i
+"inoremap $3 {}<esc>i
+"inoremap $4 {<esc>o}<esc>O
 "inoremap $q ''<esc>i
 "inoremap $e ""<esc>i
 "inoremap $t <><esc>i
@@ -586,6 +586,19 @@ au BufRead,BufNewFile *.pp set filetype=puppet
 " => TT section
 """"""""""""""""""""""""""""""
 au BufNewFile,BufRead *.tt setf tt2
+
+
+""""""""""""""""""""""""""""""
+" => PHP section
+""""""""""""""""""""""""""""""
+"au BufNewFile,BufRead *.php setf php
+au FileType php imap <c-l> echo "<pre>";<cr>var_dump();<cr>echo "</pre>";<esc>khi$
+au FileType php imap <c-d> ini_set('display_errors', 1);<cr>error_reporting(E_ERROR);
+
+""""""""""""""""""""""""""""""
+" => Bash section
+""""""""""""""""""""""""""""""
+"au BufNewFile,BufRead bash_* set syn sh
 
 
 """"""""""""""""""""""""""""""
