@@ -594,6 +594,7 @@ au BufNewFile,BufRead *.tt setf tt2
 "au BufNewFile,BufRead *.php setf php
 au FileType php imap <c-l> echo "<pre>";<cr>var_dump();<cr>echo "</pre>";<esc>khi$
 au FileType php imap <c-d> ini_set('display_errors', 1);<cr>error_reporting(E_ERROR);
+au FileType php imap <c-t> /**<cr><esc>==a @test<cr>/<cr>public function () {<cr>}<esc>kwwi
 
 """"""""""""""""""""""""""""""
 " => Bash section
