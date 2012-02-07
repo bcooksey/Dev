@@ -5,5 +5,5 @@ A directory containing files I use to configure my dev environment
     fun! MySys()
         return "linux"
     endfun
-    set runtimepath=<path_to_this_readme_dir>,$VIMRUNTIME
+    set runtimepath=<path_to_this_readme_dir>/vim,$VIMRUNTIME
     source <path_to_this_readme_dir>/vim/vimrc
