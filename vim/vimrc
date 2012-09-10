@@ -148,8 +148,9 @@ if MySys() == "mac"
   set gfn=Menlo:h14
   set shell=/bin/bash
 elseif MySys() == "windows"
-  " set gfn=Bitstream\ Vera\ Sans\ Mono:h10
-  set gfn=Courier\ 12
+"   set gfn=Courier\ New:h10
+    set gfn=Consolas:h11:cANSI
+"    set gfn=Lucida\ Console:h10
 elseif MySys() == "linux"
   set gfn=Monospace\ 11
   set shell=/bin/bash
