@@ -10,3 +10,7 @@
 	path = vim/bundle/keepcase
 	url = git://github.com/vim-scripts/keepcase.vim.git
 	ignore = dirty
+[submodule "vim/bundle/tComment"]
+	path = vim/bundle/tComment
+	url = git://github.com/vim-scripts/tComment.git
+	ignore = dirty
