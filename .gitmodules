@@ -5,3 +5,8 @@
 [submodule "vim/bundle/mini-buffer-explorer"]
 	path = vim/bundle/mini-buffer-explorer
 	url = git://github.com/fholgado/minibufexpl.vim.git
+	ignore = dirty
+[submodule "vim/bundle/keepcase"]
+	path = vim/bundle/keepcase
+	url = git://github.com/vim-scripts/keepcase.vim.git
+	ignore = dirty
