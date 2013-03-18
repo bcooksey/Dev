@@ -98,6 +98,8 @@ if has('mouse')
   set mouse=a
 endif
 
+" Load Pathogen (plugin manager)
+execute pathogen#infect()
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface
