@@ -2,3 +2,6 @@
 	path = vim/bundle/lusty-explorer
 	url = git://github.com/vim-scripts/LustyExplorer.git
 	ignore = dirty
+[submodule "vim/bundle/mini-buffer-explorer"]
+	path = vim/bundle/mini-buffer-explorer
+	url = git://github.com/fholgado/minibufexpl.vim.git
