@@ -12,3 +12,6 @@ A directory containing files I use to configure my dev environment. See the vari
   ```
   1. Run ```git submodule update --init``` to install the submodules
   1. Fire up Vim and make something awesome!
+ 
+#Utility Scripts
+Try ```echo "export PATH=`pwd`/utility_scripts/:\$PATH" >> ~/.bashrc```. You may need to go tidy up your bashrc if it already has an export statement.
