@@ -14,3 +14,11 @@
 	path = vim/bundle/tComment
 	url = git://github.com/vim-scripts/tComment.git
 	ignore = dirty
+[submodule "vim/bundle/pep8"]
+	path = vim/bundle/pep8
+	url = https://github.com/vim-scripts/pep8
+	ignore = dirty
+[submodule "vim/bundle/pyflakes"]
+	path = vim/bundle/pyflakes
+	url = git://github.com/mitechie/pyflakes-pathogen.git
+	ignore = dirty
