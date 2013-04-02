@@ -154,15 +154,17 @@ elseif MySys() == "windows"
     set gfn=Consolas:h11:cANSI
 "    set gfn=Lucida\ Console:h10
 elseif MySys() == "linux"
-  set gfn=Monospace\ 10
+  set gfn=Monospace\ 9
   set shell=/bin/bash
 endif
 
 set background=dark
 
 if has("gui_running")
-  set guioptions-=m
-  set guioptions-=T
+  set guioptions-=m " nuke menu bar 
+  set guioptions-=T " nuke toolbar
+  set guioptions-=r " nuke right-hand scroll bar
+  set showtabline=0 " nuke tab bar
   set t_Co=256
   colorscheme molokai 
 else
@@ -495,6 +497,7 @@ set guitablabel=%t
 
 " Make ;; escape insert mode
 inoremap ;; <ESC>
+inoremap jj <ESC>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Cope
@@ -606,13 +609,16 @@ au FileType php imap <c-t> /**<cr><esc>==a @test<cr>/<cr>public function () {<cr
 """"""""""""""""""""""""""""""
 "au BufNewFile,BufRead bash_* set syn sh
 
+""""""""""""""""""""""""""""""
+" => Python section
+""""""""""""""""""""""""""""""
+"let g:pep8_map='<leader>pep' FIGURE OUT SOMETHINE BESIDES F5
 
 """"""""""""""""""""""""""""""
 " => MRU plugin
 """"""""""""""""""""""""""""""
 let MRU_Max_Entries = 400
 map <leader>f :MRU<CR>
-
 
 """"""""""""""""""""""""""""""
 " => Command-T
