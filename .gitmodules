@@ -1,0 +1,40 @@
+[submodule "vim/bundle/lusty-explorer"]
+	path = vim/bundle/lusty-explorer
+	url = git://github.com/vim-scripts/LustyExplorer.git
+	ignore = dirty
+[submodule "vim/bundle/mini-buffer-explorer"]
+	path = vim/bundle/mini-buffer-explorer
+	url = git://github.com/fholgado/minibufexpl.vim.git
+	ignore = dirty
+[submodule "vim/bundle/keepcase"]
+	path = vim/bundle/keepcase
+	url = git://github.com/vim-scripts/keepcase.vim.git
+	ignore = dirty
+[submodule "vim/bundle/tComment"]
+	path = vim/bundle/tComment
+	url = git://github.com/vim-scripts/tComment.git
+	ignore = dirty
+[submodule "vim/bundle/pep8"]
+	path = vim/bundle/pep8
+	url = https://github.com/vim-scripts/pep8
+	ignore = dirty
+[submodule "vim/bundle/pyflakes"]
+	path = vim/bundle/pyflakes
+	url = git://github.com/mitechie/pyflakes-pathogen.git
+	ignore = dirty
+[submodule "vim/bundle/pydoc"]
+	path = vim/bundle/pydoc
+	url = git://github.com/fs111/pydoc.vim.git
+	ignore = dirty
+[submodule "vim/bundle/vim-surround"]
+	path = vim/bundle/vim-surround
+	url = git://github.com/tpope/vim-surround.git
+	ignore = dirty
+[submodule "vim/bundle/vim-coffee-script"]
+	path = vim/bundle/vim-coffee-script
+	url = git://github.com/kchmck/vim-coffee-script.git
+	ignore = dirty
+[submodule "vim/bundle/scss-syntax"]
+	path = vim/bundle/scss-syntax
+	url = git://github.com/cakebaker/scss-syntax.vim.git
+	ignore = dirty

@@ -1,0 +1,9 @@
+#!/bin/bash
+
+echo -e "Going to delete:\n"
+git ls-files --other --exclude-standard | xargs -I {} echo "    {}"
+read -p 'Are you sure? ' ANSWER
+if [[ $ANSWER == 'y' ]] || [[ $ANSWER == 'Y' ]]; then
+    git ls-files --other --exclude-standard | xargs rm
+fi
+
