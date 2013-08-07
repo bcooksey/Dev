@@ -164,6 +164,9 @@ if has("gui_running")
   set guioptions-=m " nuke menu bar 
   set guioptions-=T " nuke toolbar
   set guioptions-=r " nuke right-hand scroll bar
+  set guioptions-=R " nuke right-hand scroll bar in vsplit
+  set guioptions-=l " nuke left-hand scroll bar
+  set guioptions-=L " nuke left-hand scroll bar in vsplit
   set showtabline=0 " nuke tab bar
   set t_Co=256
   colorscheme molokai 
