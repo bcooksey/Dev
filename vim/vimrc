@@ -620,7 +620,7 @@ au FileType php imap <c-t> /**<cr><esc>==a @test<cr>/<cr>public function () {<cr
 " let g:pep8_map='<leader>pep' "FIGURE OUT SOMETHINE BESIDES F5
 au FileType python set shiftwidth=4
 au FileType python set tabstop=4
-au FileType python imap <c-d> import pdb; pdb.set_trace()<esc>
+au FileType python imap <c-d> import ipdb; ipdb.set_trace()<esc>
 
 " TODO: Incoroproate this as a snippet
 " import xml.dom.minidom
