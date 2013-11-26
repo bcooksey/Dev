@@ -641,8 +641,9 @@ map <leader>f :MRU<CR>
 """"""""""""""""""""""""""""""
 let g:CommandTMaxHeight = 15
 set wildignore+=*.o,*.obj,.git,*.pyc
-noremap <leader>j :CommandT<cr>
-noremap <leader>y :CommandTFlush<cr>
+noremap <leader>tt :CommandT<cr>
+noremap <leader>tb :CommandTBuffer<cr>
+noremap <leader>tf :CommandTFlush<cr>
 
 
 """"""""""""""""""""""""""""""
@@ -650,7 +651,6 @@ noremap <leader>y :CommandTFlush<cr>
 """"""""""""""""""""""""""""""
 let Grep_Skip_Dirs = 'RCS CVS SCCS .svn generated'
 set grepprg=/bin/grep\ -nH
-
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
