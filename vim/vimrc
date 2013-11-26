@@ -27,10 +27,6 @@
 "
 "
 " Plugins_Included:
-"     > bufexplorer - http://www.vim.org/scripts/script.php?script_id=42
-"       Makes it easy to switch between buffers:
-"           info -> :help bufExplorer
-"
 "     > yankring.vim - http://www.vim.org/scripts/script.php?script_id=1234
 "       Emacs's killring, useful when using the clipboard:
 "           info -> :help yankring
@@ -48,10 +44,33 @@
 "           info -> :e ~/.vim_runtime/plugin/mru.vim
 "
 "     > Command-T - http://www.vim.org/scripts/script.php?script_id=3025
-"       Command-T plug-in provides an extremely fast, intuitive mechanism for opening filesa:
+"       Command-T plug-in provides an extremely fast, intuitive mechanism for opening files:
 "           info -> :help CommandT
 "           screencast and web-help -> http://amix.dk/blog/post/19501
+
+"     > LustyExplorer - http://www.vim.org/scripts/script.php?script_id=1890
+"       Buffer and file explorer. Let's you walk directory trees easily:
+"           info -> :e ~/.vim_runtime/vim/bundle/lusty-explorer/README
 "
+"     > keepcase.vim - http://www.vim.org/scripts/script.php?script_id=6
+"       Substitution that respects the existing capitalization in the words you are replacing
+"           info -> :e ~/.vim_runtime/vim/bundle/keepcase/README
+
+"     > tComment - http://www.vim.org/scripts/script.php?script_id=1173
+"       Quickly comment/uncomment sections of code:
+"           info -> :e ~/.vim_runtime/vim/bundle/tComment/doc/tcomment.txt
+"
+"     > pep8 - http://www.vim.org/scripts/script.php?script_id=2914
+"       Check your python source files with PEP8
+"           info -> :e ~/.vim_runtime/vim/bundle/pep8/README
+"
+"     > python_pydoc.vim - http://www.vim.org/scripts/script.php?script_id=910
+"       Python documentation view- and search-tool (via system pydoc command)
+"           info -> :e ~/.vim_runtime/vim/bundle/pydoc/README
+"
+"     > pyflakes.vim - http://www.vim.org/scripts/script.php?script_id=2441
+"       On-the-fly Python code checking. Catches many syntax mistakes
+"           info -> :e ~/.vim_runtime/vim/bundle/pyflakes/readme.rst
 "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
@@ -501,14 +520,6 @@ inoremap jj <ESC>
 map <leader>cc :botright cope<cr>
 map <leader>n :cn<cr>
 map <leader>p :cp<cr>
-
-
-""""""""""""""""""""""""""""""
-" => bufExplorer plugin
-""""""""""""""""""""""""""""""
-let g:bufExplorerDefaultHelp=0
-let g:bufExplorerShowRelativePath=1
-map <leader>o :BufExplorer<cr>
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
