@@ -38,3 +38,7 @@
 	path = vim/bundle/command-t
 	url = git@github.com:wincent/Command-T.git
 	ignore = dirty
+[submodule "vim/bundle/go"]
+	path = vim/bundle/go
+	url = git@github.com:jnwhiteh/vim-golang.git
+	ignore = dirty
