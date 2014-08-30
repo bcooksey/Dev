@@ -48,3 +48,6 @@
 [submodule "vim/bundle/vim-jdaddy"]
 	path = vim/bundle/vim-jdaddy
 	url = git://github.com/tpope/vim-jdaddy.git
+[submodule "vim/bundle/vim-eunuch"]
+	path = vim/bundle/vim-eunuch
+	url = git://github.com/tpope/vim-eunuch.git
