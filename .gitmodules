@@ -42,3 +42,6 @@
 	path = vim/bundle/go
 	url = git@github.com:jnwhiteh/vim-golang.git
 	ignore = dirty
+[submodule "vim/bundle/vim-characterize"]
+	path = vim/bundle/vim-characterize
+	url = git://github.com/tpope/vim-characterize.git
