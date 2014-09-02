@@ -27,6 +27,15 @@ A directory containing files I use to configure my dev environment. See the vari
 
 Royal pain for git versions 1.7-.
 
+ 1. Delete the relevant section from the .gitmodules file.
+ 1. Stage the .gitmodules changes git add .gitmodules
+ 1. Delete the relevant section from .git/config.
+ 1. `git rm --cached path_to_submodule` (no trailing slash).
+ 1. `rm -rf .git/modules/path_to_submodule` (may not exist)
+ 1. `git commit -m "Removed submodule <name>"`
+ 1. `rm -rf path_to_submodule` Delete the now untracked submodule files
+
+
 git 1.8
 
  1. `git submodule deinit <plugin_name>`
