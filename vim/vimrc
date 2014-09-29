@@ -35,14 +35,6 @@
 "       Makes it easy to work with surrounding text:
 "           info -> :help surround
 "
-"     > snipMate.vim - http://www.vim.org/scripts/script.php?script_id=2540
-"       Snippets for many languages (similar to TextMate's):
-"           info -> :help snipMate
-"
-"     > mru.vim - http://www.vim.org/scripts/script.php?script_id=521
-"       Plugin to manage Most Recently Used (MRU) files:
-"           info -> :e ~/.vim_runtime/plugin/mru.vim
-"
 "     > Command-T - http://www.vim.org/scripts/script.php?script_id=3025
 "       Command-T plug-in provides an extremely fast, intuitive mechanism for opening files:
 "           info -> :help CommandT
@@ -188,7 +180,7 @@ else
   colorscheme zellner
 endif
 
-set nonu
+set number " Shows numbers along left column
 set encoding=utf8
 try
     lang en_US
