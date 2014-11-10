@@ -160,7 +160,7 @@ elseif MySys() == "windows"
     set gfn=Consolas:h11:cANSI
 "    set gfn=Lucida\ Console:h10
 elseif MySys() == "linux"
-  set gfn=Monospace\ 9
+  set gfn=Monospace\ 10
   set shell=/bin/bash
 endif
 
@@ -342,7 +342,7 @@ endif
 "map <c-space> ?
 map <silent> <space> :noh<cr>
 
-" Smart way to move btw. windows
+" Smart way to move btween windows
 map <C-j> <C-W>j
 map <C-k> <C-W>k
 map <C-h> <C-W>h
@@ -350,7 +350,7 @@ map <C-l> <C-W>l
 
 " Navigate by display lines, not physical lines
 " See http://vim.wikia.com/wiki/VimTip38
-"set virtualedit=
+set virtualedit=block
 "setlocal linebreak nolist
 "setlocal display+=lastline
 "noremap  <buffer> <silent> <Up>   gk
