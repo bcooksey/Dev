@@ -94,7 +94,7 @@ let mapleader = ","
 let g:mapleader = ","
 
 " Fast saving
-"nmap <leader>w :w!<cr>
+nmap <leader>w :w<cr>
 
 " Fast editing of the .vimrc
 map <leader>e :e! ~/my_dev/vim/vimrc<cr>
@@ -106,6 +106,10 @@ autocmd! bufwritepost vimrc source ~/my_dev/vim/vimrc
 if has('mouse')
   set mouse=a
 endif
+
+" Make ; be : (never used default behavior of ; anyway)
+nnoremap ; :
+vnoremap ; :
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface
@@ -227,8 +231,10 @@ set textwidth=0
 set lbr
 set tw=500
 
-"set ai "Auto indent
+set ai "Auto indent
 set si "Smart indet
+" Prevent comments from outdenting
+inoremap # X<C-H>#
 set wrap "Wrap lines
 
 
