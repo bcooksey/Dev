@@ -26,19 +26,19 @@
 "    -> JavaScript section
 "
 "
-" Plugins_Included:
+" Plugins:
+"       (Not currently included. Need to investigate)
 "     > yankring.vim - http://www.vim.org/scripts/script.php?script_id=1234
 "       Emacs's killring, useful when using the clipboard:
 "           info -> :help yankring
 "
-"     > surround.vim - http://www.vim.org/scripts/script.php?script_id=1697
+"     > surround.vim - https://github.com/tpope/vim-surround
 "       Makes it easy to work with surrounding text:
 "           info -> :help surround
 "
-"     > Command-T - http://www.vim.org/scripts/script.php?script_id=3025
+"     > Command-T - https://github.com/wincent/Command-T
 "       Command-T plug-in provides an extremely fast, intuitive mechanism for opening files:
 "           info -> :help CommandT
-"           screencast and web-help -> http://amix.dk/blog/post/19501
 
 "     > LustyExplorer - http://www.vim.org/scripts/script.php?script_id=1890
 "       Buffer and file explorer. Let's you walk directory trees easily:
@@ -52,6 +52,17 @@
 "       Quickly comment/uncomment sections of code:
 "           info -> :e ~/.vim_runtime/vim/bundle/tComment/doc/tcomment.txt
 "
+"     > characterize.vim - https://github.com/tpope/vim-characterize
+"       Quickly see a character's representation in decimal, octal, and hex
+"
+"     > eunuch.vim - https://github.com/tpope/vim-eunuch
+"       Vim sugar for the UNIX shell commands that need it the most
+"
+"     > fugitive.vim - https://github.com/tpope/vim-fugitive
+"       Git wrapper
+"
+" Language_Plugins:
+"
 "     > pep8 - http://www.vim.org/scripts/script.php?script_id=2914
 "       Check your python source files with PEP8
 "           info -> :e ~/.vim_runtime/vim/bundle/pep8/README
@@ -63,7 +74,16 @@
 "     > pyflakes.vim - http://www.vim.org/scripts/script.php?script_id=2441
 "       On-the-fly Python code checking. Catches many syntax mistakes
 "           info -> :e ~/.vim_runtime/vim/bundle/pyflakes/readme.rst
+
+"     > scss-syntax.vim - https://github.com/cakebaker/scss-syntax.vim
+"       Vim Syntax File for SCSS
 "
+"     > vim-coffee-script - https://github.com/kchmck/vim-coffee-script
+"       CoffeeScript support for vim
+"
+"     > vim-golang - https://github.com/jnwhiteh/vim-golang
+"       Golang support. Apparently deprecated...use the history
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
