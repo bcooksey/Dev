@@ -624,12 +624,6 @@ au FileType go set shiftwidth=4
 au FileType go set tabstop=4
 
 """"""""""""""""""""""""""""""
-" => MRU plugin
-""""""""""""""""""""""""""""""
-let MRU_Max_Entries = 400
-map <leader>f :MRU<CR>
-
-""""""""""""""""""""""""""""""
 " => Command-T
 """"""""""""""""""""""""""""""
 let g:CommandTMaxHeight = 15
