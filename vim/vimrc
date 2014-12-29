@@ -618,6 +618,12 @@ au FileType python imap <c-d> import ipdb; ipdb.set_trace()<esc>
 " f.close()
 
 """"""""""""""""""""""""""""""
+" => Go section
+""""""""""""""""""""""""""""""
+au FileType go set shiftwidth=4
+au FileType go set tabstop=4
+
+""""""""""""""""""""""""""""""
 " => MRU plugin
 """"""""""""""""""""""""""""""
 let MRU_Max_Entries = 400
