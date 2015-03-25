@@ -184,7 +184,7 @@ elseif MySys() == "windows"
     set gfn=Consolas:h11:cANSI
 "    set gfn=Lucida\ Console:h10
 elseif MySys() == "linux"
-  set gfn=Monospace\ 10
+  set gfn=Monospace\ 9
   set shell=/bin/bash
 endif
 
@@ -201,7 +201,7 @@ if has("gui_running")
   set t_Co=256
   colorscheme molokai 
 else
-  colorscheme zellner
+  colorscheme molokai
 endif
 
 set number " Shows numbers along left column
