@@ -117,10 +117,10 @@ let g:mapleader = ","
 nmap <leader>w :w<cr>
 
 " Fast editing of the .vimrc
-map <leader>e :e! ~/my_dev/vim/vimrc<cr>
+map <leader>e :e! ~/dev/dev-env/vim/vimrc<cr>
 
 " When vimrc is edited, reload it
-autocmd! bufwritepost vimrc source ~/my_dev/vim/vimrc
+autocmd! bufwritepost vimrc source ~/dev/dev-env/vim/vimrc
 
 " In many terminal emulators the mouse works just fine, thus enable it.
 if has('mouse')
@@ -177,7 +177,7 @@ syntax enable "Enable syntax hl
 
 " Set font according to system
 if MySys() == "mac"
-  set gfn=Menlo:h14
+  set gfn=Monaco:h12
   set shell=/bin/bash
 elseif MySys() == "windows"
 "   set gfn=Courier\ New:h10
@@ -461,7 +461,7 @@ set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ Line:\ %l/%L:%c
 
 
 function! CurDir()
-    let curdir = substitute(getcwd(), '/home/bcooksey/', "~/", "g")
+    let curdir = substitute(getcwd(), '/Users/briancooksey/', "~/", "g")
     return curdir
 endfunction
 
@@ -571,6 +571,8 @@ au FileType perl imap <c-l> print STDERR "\n>>>>>>>>>" .  . "\n";<esc>BBhi
 au FileType javascript call JavaScriptFold()
 au FileType javascript setl fen
 au FileType javascript setl nocindent
+au FileType javascript set shiftwidth=2
+au FileType javascript set tabstop=2
 
 au FileType javascript imap <c-t> console.dir();<esc>hi
 au FileType javascript imap <c-a> console.debug();<esc>hi
