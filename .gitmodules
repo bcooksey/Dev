@@ -10,14 +10,6 @@
 	path = vim/bundle/tComment
 	url = git://github.com/vim-scripts/tComment.git
 	ignore = dirty
-[submodule "vim/bundle/pep8"]
-	path = vim/bundle/pep8
-	url = https://github.com/vim-scripts/pep8
-	ignore = dirty
-[submodule "vim/bundle/pyflakes"]
-	path = vim/bundle/pyflakes
-	url = git://github.com/mitechie/pyflakes-pathogen.git
-	ignore = dirty
 [submodule "vim/bundle/pydoc"]
 	path = vim/bundle/pydoc
 	url = git://github.com/fs111/pydoc.vim.git
@@ -51,6 +43,6 @@
 [submodule "vim/bundle/vim-fugitive"]
 	path = vim/bundle/vim-fugitive
 	url = git://github.com/tpope/vim-fugitive.git
-[submodule "vim/bundle/vim-flake8"]
-	path = vim/bundle/vim-flake8
-	url = git@github.com:nvie/vim-flake8.git
+[submodule "vim/bundle/syntastic"]
+	path = vim/bundle/syntastic
+	url = git@github.com:scrooloose/syntastic.git
