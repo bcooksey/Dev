@@ -36,7 +36,7 @@ Royal pain for git versions 1.7-.
  1. `rm -rf path_to_submodule` Delete the now untracked submodule files
 
 
-git 1.8
+git 1.8+
 
  1. `git submodule deinit <plugin_name>`
  1. `git rm vim/bundle/<plugin_name>`

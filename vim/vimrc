@@ -74,6 +74,9 @@
 "     > pyflakes.vim - http://www.vim.org/scripts/script.php?script_id=2441
 "       On-the-fly Python code checking. Catches many syntax mistakes
 "           info -> :e ~/.vim_runtime/vim/bundle/pyflakes/readme.rst
+"
+"     > vim-flake8.vim - https://github.com/nvie/vim-flake8
+"       PEP8 Syntax checker
 
 "     > scss-syntax.vim - https://github.com/cakebaker/scss-syntax.vim
 "       Vim Syntax File for SCSS
