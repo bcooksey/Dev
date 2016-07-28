@@ -16,6 +16,11 @@ A directory containing files I use to configure my dev environment. See the vari
     1. `cd ./vim/bundle/command-t/ruby/command-t`
     1. `ruby extconf.rb`
     1. `make`
+  1. Optional: Install eslint for better JavaScript warnings
+    1. npm install -g eslint
+    1. npm install -g babel-eslint
+  1. Optional: Install flake8 for better Python warnings
+    1. pip install flake8
   1. Fire up Vim and make something awesome!
 
 ## Adding Plugins
