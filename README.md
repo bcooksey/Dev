@@ -1,6 +1,7 @@
 A directory containing files I use to configure my dev environment. See the various sections for installation info.
 
 #Vim
+
   1. To use the vimrc file in the repo, create a vimrc in your home directory with the following, substituting `<path_to_this_readme_dir>` with a real one.
   ```vim
     fun! MySys()
@@ -18,7 +19,6 @@ A directory containing files I use to configure my dev environment. See the vari
   1. Fire up Vim and make something awesome!
 
 ## Adding Plugins
-
 
  1. `git submodule add <url_to_git_repo> vim/bundle/<plugin_name>`
  1. `git submodule init`
@@ -41,4 +41,5 @@ git 1.8+
  1. `git rm vim/bundle/<plugin_name>`
 
 #Utility Scripts
+
 Try ```echo "export PATH=`pwd`/utility_scripts/:\$PATH" >> ~/.bashrc```. You may need to go tidy up your bashrc if it already has an export statement.
