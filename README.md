@@ -28,7 +28,16 @@ A directory containing files I use to configure my dev environment. See the vari
  1. `git submodule add <url_to_git_repo> vim/bundle/<plugin_name>`
  1. `git submodule init`
 
+## Updating Plugins
+
+1. `git submodule update --remote vim/bundle/<plugin_name>`
+
 ## Removing Plugins
+
+git 1.8+
+
+ 1. `git submodule deinit vim/bundle/<plugin_name>`
+ 1. `git rm vim/bundle/<plugin_name>`
 
 Royal pain for git versions 1.7-.
 
@@ -39,11 +48,6 @@ Royal pain for git versions 1.7-.
  1. `rm -rf .git/modules/path_to_submodule` (may not exist)
  1. `git commit -m "Removed submodule <name>"`
  1. `rm -rf path_to_submodule` Delete the now untracked submodule files
-
-git 1.8+
-
- 1. `git submodule deinit vim/bundle/<plugin_name>`
- 1. `git rm vim/bundle/<plugin_name>`
 
 #Utility Scripts
 
