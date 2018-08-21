@@ -46,3 +46,6 @@
 [submodule "vim/bundle/syntastic"]
 	path = vim/bundle/syntastic
 	url = git@github.com:scrooloose/syntastic.git
+[submodule "vim/bundle/black"]
+	path = vim/bundle/black
+	url = git@github.com:bcooksey/vim-black.git
