@@ -631,7 +631,6 @@ au FileType python imap <c-d> import ipdb; ipdb.set_trace()<esc>
 " f = open('./foo_pretty.xml', 'w')
 " f.write(pretty_xml_as_string)
 " f.close()
-"
 
 """"""""""""""""""""""""""""""
 " => Go section
@@ -667,6 +666,17 @@ let g:syntastic_javascript_checkers = ['standard', 'eslint']
 " autocmd FileType javascript let b:syntastic_javascript_eslint_args =
 "     \ get(g:, 'syntastic_javascript_eslint_args', '') .
 "     \ FindConfig('-c', '.eslint', expand('<afile>:p:h', 1))
+
+""""""""""""""""""""""""""""""
+" => Black
+""""""""""""""""""""""""""""""
+let g:black_skip_string_normalization = 1
+
+" Run Black on-demand
+au FileType python map <leader>ff :Black<cr>
+" Alt: can run Black on save
+" autocmd BufWritePre *.py execute ':Black'
+
 
 """"""""""""""""""""""""""""""
 " => Vim grep
