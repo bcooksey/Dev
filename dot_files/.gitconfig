@@ -1,0 +1,16 @@
+[user]
+    name = Brian Cooksey
+    email = bac2k@hotmail.com
+[color]
+    ui = true
+[alias]
+    st = status
+    ci = commit
+    br = branch
+    co = checkout
+    df = diff
+    lg = log -p
+[merge]
+    tool = vimdiff
+[core]
+    editor = vim
