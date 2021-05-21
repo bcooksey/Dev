@@ -172,7 +172,7 @@ syntax enable "Enable syntax hl
 
 " Set font according to system
 if MySys() == "mac"
-  set gfn=Monaco:h12
+  set gfn=Monaco:h14
   set shell=/bin/bash
 elseif MySys() == "windows"
 "   set gfn=Courier\ New:h10
